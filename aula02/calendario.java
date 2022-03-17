@@ -44,6 +44,7 @@ public class calendario {
         // Com IF
         // Com Switch
         System.out.println("Numero digitado = " + mes);
+        System.out.println("Nome do mes (if) = " + mostrarNomeMesIf(mes));
         input.close();
 
     }
