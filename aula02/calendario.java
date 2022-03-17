@@ -31,6 +31,63 @@ public class calendario {
         } 
         return nomeMes;
     }
+
+    public static String mostrarNomeMesSwitch(int mes){
+        String nomeMes = "";
+        switch (mes) {
+            case 1:
+                nomeMes = "Janeiro";               
+                break;
+
+            case 2:
+                nomeMes = "Fevereiro";
+                break;
+
+            case 3:
+                nomeMes = "Março";
+                break;
+
+            case 4:
+                nomeMes = "Abril";
+                break;
+
+            case 5:
+                nomeMes = "Maio";
+                break;
+
+            case 6:
+                nomeMes = "Junho";
+                break;
+
+            case 7:
+                nomeMes = "Julho";
+                break;
+
+            case 8:
+                nomeMes = "Agosto";
+                break;
+
+            case 9:
+                nomeMes = "Setembro";
+                break;
+
+            case 10:
+                nomeMes = "Outubro";
+                break;
+
+            case 11:
+                nomeMes = "Novembro";
+                break;
+
+            case 12:
+                nomeMes = "Dezembro";
+                break;
+        
+            default:
+                break;
+        }
+        return nomeMes;
+    }
     // Função principal
     public static void main(String[] args){
         // Mostrar uma mensagem para o usuario
@@ -45,6 +102,7 @@ public class calendario {
         // Com Switch
         System.out.println("Numero digitado = " + mes);
         System.out.println("Nome do mes (if) = " + mostrarNomeMesIf(mes));
+        System.out.println("Nome do mes (Switch) = " + mostrarNomeMesSwitch(mes));
         input.close();
 
     }
