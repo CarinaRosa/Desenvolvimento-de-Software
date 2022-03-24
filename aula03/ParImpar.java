@@ -17,13 +17,13 @@ public class ParImpar{
 
         do{
             n = teclado.nextInt();
-            if (n>=0) {
-                System.out.printIn(verificaParImpar(n));
+            if (n >= 0) {
+                System.out.printIn(verificarParImpar(n));
             }
         }
-        while(n >= 0){
+        while(n >= 0);
             teclado.close();
-        }
+    
     }
     
 }
