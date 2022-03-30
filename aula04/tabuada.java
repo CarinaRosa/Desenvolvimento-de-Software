@@ -10,3 +10,11 @@ public class tabuada {
     }
     
 }
+
+/* 
+
+    \n é quebra de linha 
+    \t tabulação 
+
+
+*/
