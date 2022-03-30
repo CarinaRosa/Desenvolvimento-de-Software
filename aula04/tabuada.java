@@ -17,4 +17,10 @@ public class tabuada {
     \t tabulação 
 
 
+    %d = inteiro
+    %f = float
+    %s = string
+    %c - character
+    %t = data/hora
+
 */
