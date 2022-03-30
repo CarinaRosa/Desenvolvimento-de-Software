@@ -1,11 +1,10 @@
+import java.util.Scanner;
 public class calculadora{
     public static int operacao(int a, int b){
 
-        public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
         int a;
         int b;
-        int operacao;
+        String operacao = "";
         int resultado;
         
         if(operacao === 1){
@@ -25,11 +24,25 @@ public class calculadora{
             System.out.printIn("Operação invalida! Digite 1 para soma, 2 para subtração, 3 para multiplicação e 4 para divisão.")
         }    
 
+   
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Digite o primeiro numero inteiro: ");
+        System.out.println("Digite o segundo numero inteiro: ");
+        Scanner teclado = new Scanner(System.in);
+        
+        int a = teclado.nextInt();
+        int b = teclado.nextInt();
+        int operacao = teclado.nextInt();
+
+        System.out.println("Primeiro numero digitado: " + a);
+        System.out.println("Segundo numero digitado: " + b);
+        System.out.println("Resultado da operação:" + resultado);
         
         teclado.close();
               
-    
-    }
 
     }
 
