@@ -35,7 +35,7 @@ public class SorteioBusca {
         int num = teclado.nextInt();
         int pos = procurar(num);
 
-        if (pos >= 0) {
+        if (pos <= 0) {
             System.out.printf("Numero encontrado na posição %d", pos);
             
         } else{
