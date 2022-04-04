@@ -1,7 +1,8 @@
 {
     "java.project.sourcePaths": [
         "aula04",
+        "Fatorial",
         "Calculadora",
-        "Fatorial"
+        "Fibonacci"
     ]
 }
