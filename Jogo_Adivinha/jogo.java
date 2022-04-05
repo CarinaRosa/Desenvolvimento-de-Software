@@ -38,5 +38,7 @@ public class jogo {
         System.out.println("Digite um numero: ");
         int num = teclado.nextInt();
         int pos = procurar(num);
+        int tentativas = 10;
+        
     }
 }
