@@ -1,9 +1,11 @@
 {
     "java.project.sourcePaths": [
         "aula04",
+        "Jogo_Adivinha",
+        "Fibonacci",
         "Fatorial",
         "Calculadora",
-        "Fibonacci",
-        "Jogo_Adivinha"
+        "Projetos_1b/Jogo_Adivinha",
+        "Projetos_1b\\Loteria"
     ]
 }
