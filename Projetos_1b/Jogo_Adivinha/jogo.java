@@ -27,7 +27,7 @@ public class jogo {
             } else if (adivinha < numSorteado) {
                 --tentativa;
                 System.out.println("Numero informado muito baixo, tente um numero maior. Você possui " + tentativa + " tentativas restantes.");                
-            } else {
+            } else if (adivinha > numSorteado){
                 --tentativa;
                 System.out.println("Numero informado muito alto, tente um numero menor. Você possui " + tentativa + " tentativas restantes.");
             }
