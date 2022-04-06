@@ -12,7 +12,7 @@ public class jogo {
 
         boolean acerto = false;
         int tentativa = 10;
-        int numSorteado = gerador.nextInt(100) +1;
+        int numSorteado = gerador.nextInt(100);
         long adivinha = 0;
 
         //System.out.println(numSorteado);
