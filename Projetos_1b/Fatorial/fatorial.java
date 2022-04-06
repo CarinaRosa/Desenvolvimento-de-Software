@@ -8,28 +8,22 @@ public class fatorial {
 
         int n = teclado.nextInt();
 
+        int fat, val;
         teclado.close();            
-
-        /*
-           
-        }else*/ if (n >= 0) {
-
-            while (n > 0) { 
-                n = n*(n-1)*1;
-                n--;
-                System.out.println(n);
-            }          
-                
-        }
-        else{
-            System.out.printf("Numero informado não é positivo. Tente novamente.");
-        }
 
         if (n == 0) {
 
             System.out.println("O resultado do fatorial é 1.");
-        }
-        
+        }else if (n > 0) {
+            val = n;
+            fat = n;
 
+            while (n > 1) {
+                fat = fat*(n-1);
+                n--;
+            }
+            System.out.println("O valor fatorial de " + val + " é " + fat);
+        }
+       
     }
 }
