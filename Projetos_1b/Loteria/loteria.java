@@ -1,4 +1,4 @@
-import java.util.Random;
+
 import java.util.Scanner;
 
 
@@ -6,14 +6,14 @@ public class loteria {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
-        Random gerador = new Random();      
+        //Random gerador = new Random();      
        
-        int vetor[] = new int[6];
-        int num;
+        int vetor[] = new int[]{1,2,3,4,5,6};
+        //int num;
         
 
         //Para o Random não gerar numeros repetidos
-        for (int i = 0; i < vetor.length; i++) {
+        /*for (int i = 0; i < vetor.length; i++) {
             num = gerador.nextInt(60)+1;
             for (int j = 0; j < vetor.length; j++) {
                 if (num == vetor[j] && j != i) {
@@ -24,7 +24,7 @@ public class loteria {
             }
 
             
-        }
+        }*/
 
         //Validar se realmente não foram repetidos
         /*for (int i = 0; i < vetor.length; i++) {
