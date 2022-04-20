@@ -17,10 +17,12 @@ public class CadastroPontos {
             pontos[i] = new Ponto(x,y);
         }
 
-        System.out.println("\n---------- Lista Pontos Informados -----------\n");
+        System.out.printf("\n---------- Lista Pontos Informados -----------\n");
         for (int i = 0; i < pontos.length; i++) {
             System.out.println(pontos[i].toString());
         }
+
+        System.out.printf("\n---------- Distancias ----------\n");
 
         teclado.close();
     }
