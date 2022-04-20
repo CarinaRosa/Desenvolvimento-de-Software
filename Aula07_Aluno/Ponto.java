@@ -4,8 +4,7 @@ public class Ponto {
     private double y;
 
     public Ponto(){
-        x = 0;
-        y = 0;
+        
     }
 
     public Ponto(double x, double y){
