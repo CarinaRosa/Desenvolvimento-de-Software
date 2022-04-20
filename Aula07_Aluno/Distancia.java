@@ -1,4 +1,5 @@
 public class Distancia {
+    
     private double pt1;
     private double pt2;
     private double pt3;
