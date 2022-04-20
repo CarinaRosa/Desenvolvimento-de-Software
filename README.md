@@ -33,3 +33,14 @@ https://devdocs.io/openjdk/
 Java.lang
 Java.util
 Organização de codigo em pacotes
+
+
+-----------------------------------------------//--------------------------------------------
+
+// variáveis de instância - substitua o exemplo abaixo pelo seu próprio
+/*
+     * Construtor para objetos da classe Aluno
+     */
+	 // inicializa variáveis de instância
+
+// getters e setters
