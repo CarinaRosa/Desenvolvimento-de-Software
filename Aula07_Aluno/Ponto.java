@@ -12,12 +12,7 @@ public class Ponto {
         this.y = y;
     }
 
-    public Ponto(double pt1, double pt2, double pt3) {
-    }
-
-    public Ponto(Double x2, Double y2) {
-    }
-
+            
     public double getx(){
         return this.x;
     }

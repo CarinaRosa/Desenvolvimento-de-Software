@@ -24,6 +24,8 @@ public class CadastroPontos {
 
         System.out.printf("\n---------- Distancias ----------\n");
 
+       
+       
         teclado.close();
     }
 }
