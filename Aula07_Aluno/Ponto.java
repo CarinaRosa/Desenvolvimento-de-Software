@@ -33,12 +33,12 @@ public class Ponto {
     public void sety(double y){
         this.y = y;
     }
-
-    public double Distancia(){
+ 
+    public double distancia(){
         return Math.sqrt(Math.pow(x, 2) + Math.pow(x, 2));
     }
 
-    public double Distancia(Ponto pt2){
-        return Math.sqrt(Math.pow(x, 3) + Math.pow(x, 3));
+    public double distancia(Ponto p){
+        return Math.sqrt(Math.pow(this.x - p.x, 2) + Math.pow(this.y - p.y, 2));
     }
 }
