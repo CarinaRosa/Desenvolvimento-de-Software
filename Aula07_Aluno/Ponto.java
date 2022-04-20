@@ -12,6 +12,11 @@ public class Ponto {
         this.y = y;
     }
 
+    @Override
+    public String toString() {
+        return String.format("x = %f y = %f ", x, y);
+    }
+
             
     public double getx(){
         return this.x;
