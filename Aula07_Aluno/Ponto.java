@@ -19,11 +19,11 @@ public class Ponto {
 
             
     public double getx(){
-        return this.x;
+        return x;
     }
 
     public double gety(){
-        return this.y;
+        return y;
     }
 
     public void setx(double x){
@@ -32,5 +32,13 @@ public class Ponto {
 
     public void sety(double y){
         this.y = y;
+    }
+
+    public double Distancia(){
+        return Math.sqrt(Math.pow(x, 2) + Math.pow(x, 2));
+    }
+
+    public double Distancia(Ponto pt2){
+        return Math.sqrt(Math.pow(x, 3) + Math.pow(x, 3));
     }
 }
