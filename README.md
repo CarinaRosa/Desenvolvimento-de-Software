@@ -44,3 +44,18 @@ Organização de codigo em pacotes
 	 // inicializa variáveis de instância
 
 // getters e setters
+
+
+-----------------------------------------------//--------------------------------------------
+
+DICAS:
+
+Primeiro fazer listas das classes (do que vai conter nas classes)
+Dividir por arvore de herdeiros
+
+**quanto maior a arvore maior o nivel de especificação
+**Superclasse é a classe mãe - ex: A é superclasse de B
+**Subclasse é a classe filha - ex: B é subclasse de A
+**Herança Simples: somente uma Superclasse
+**Herança multipla: possui mais de uma Superclasse (Java não utiliza)
+**classes herdam metodos e atributos.
