@@ -90,7 +90,7 @@ public class Pessoa {
     }
 
     public double calcularCompatibilidade(Pessoa pessoa){
-        return Math.sqrt(Math.pow(a, b))
+        return Math.sqrt(Math.pow(this.gostaViajar - pessoa.gostaViajar, 2) + Math.pow(this.gostaCozinhar - pessoa.gostaCozinhar, 2) + Math.pow(this.gostaCinema - pessoa.gostaCinema, 2) + Math.pow(this.gostaBalada - pessoa.gostaBalada, 2) + Math.pow(this.gostaFicarEmCasa - pessoa.gostaFicarEmCasa, 2));
     }
 
 
