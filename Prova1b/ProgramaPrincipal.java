@@ -2,19 +2,20 @@ import java.util.Scanner;
 
 public class ProgramaPrincipal {
     public static void main(String[] args) {
-        // Pessoa felipe = new Pessoa('Felipe', 57, 'M', 90, 100, 80, 30, 70);
+        
         Pessoa vetor[] = new Pessoa[6];
         
-        Pessoa indice0 = new Pessoa("Felipe", 57, 'M', 90, 100, 80, 30, 70);
-        Pessoa indice1 = new Pessoa("Maria", 45, 'F', 50, 70, 100, 50, 90);
-        Pessoa indice2 = new Pessoa("Cristina", 30, 'F', 50, 20, 30, 70, 30);
-        Pessoa indice3 = new Pessoa("Leonardo", 32, 'M', 80, 10, 60, 80, 50);
-        Pessoa indice4 = new Pessoa("João", 27, 'M', 100, 30, 50, 100, 10);
-        Pessoa indice5 = new Pessoa("Jessica", 45, 'F', 85, 60, 70, 50, 60);
+        vetor[0] = new Pessoa("Felipe", 57, 'M', 90, 100, 80, 30, 70);
+        vetor[1] = new Pessoa("Maria", 45, 'F', 50, 70, 100, 50, 90);
+        vetor[2] = new Pessoa("Cristina", 30, 'F', 50, 20, 30, 70, 30);
+        vetor[3] = new Pessoa("Leonardo", 32, 'M', 80, 10, 60, 80, 50);
+        vetor[4] = new Pessoa("João", 27, 'M', 100, 30, 50, 100, 10);
+        vetor[5] = new Pessoa("Jessica", 45, 'F', 85, 60, 70, 50, 60);
 
         Scanner teclado = new Scanner(System.in);
 
-        for (int i = 0; i < vetor.length; i++) {
+        Pessoa pessoalida = null;
+
             System.out.println("Digite o seu nome:");
             String nome = teclado.next();
 
@@ -23,7 +24,7 @@ public class ProgramaPrincipal {
             
             if (idade >= 18) {
                 System.out.println("Digite seu genero:");
-                char genero = teclado.next().charAt(1);
+                char genero = teclado.next().charAt(0);
 
                 if (genero == 'F' || genero == 'M') {
                     System.out.println("Entre 0 e 100, quanto você gosta de viajar?");
@@ -46,7 +47,7 @@ public class ProgramaPrincipal {
                                     int gostaFicarEmCasa = teclado.nextInt();
 
                                     if (gostaFicarEmCasa > 0 && gostaFicarEmCasa <= 100) {
-                                        vetor[i] = new Pessoa(nome, idade, genero, gostaViajar, gostaCozinhar, gostaCinema, gostaBalada, gostaFicarEmCasa);
+                                        pessoalida = new Pessoa(nome, idade, genero, gostaViajar, gostaCozinhar, gostaCinema, gostaBalada, gostaFicarEmCasa);
 
                                     }// fim ultimo if
                                     
@@ -75,7 +76,19 @@ public class ProgramaPrincipal {
                 System.out.println("Precisa ser maior de 18 anos para continuar.");
             }
 
-        }// fim do for
+        double compativel = 0;
+
+        for (int i = 0; i < vetor.length; i++) {
+            compativel = pessoalida.calcularCompatibilidade(vetor[i]);
+            
+        }
+
+            System.out.printf("\nDados da pessoa informada:\n");
+            System.out.println(pessoalida.toString());
+
+            System.out.printf("\nDados da pessoa compativel:\n");
+            System.out.println(compativel);
+      
 
         teclado.close();
     } // fim da main
