@@ -76,12 +76,15 @@ public class ProgramaPrincipal {
                 System.out.println("Precisa ser maior de 18 anos para continuar.");
             }
 
-        double compativel = 0;
+        Pessoa compativel = null;
 
         for (int i = 0; i < vetor.length; i++) {
-            compativel = pessoalida.calcularCompatibilidade(vetor[i]);
+            pessoalida.calcularCompatibilidade(vetor[i]);
+            compativel = vetor[i];
             
         }
+
+            //System.out.println(vetor);
 
             System.out.printf("\nDados da pessoa informada:\n");
             System.out.println(pessoalida.toString());
