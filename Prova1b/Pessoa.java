@@ -84,13 +84,27 @@ public class Pessoa {
         this.gostaFicarEmCasa = gostaFicarEmCasa;
     }
 
+    // @Override
+    // public String toString(){
+    //     return super.toString() + ":\n" + String.format("Nome: %s\nIdade: %d\nGenero: %c\nGosta de Viajar: %d\nGosta de Cozinhar: %d\nGosta de Cinema: %d\nGosta de Balada: %d\nGosta  de Ficar em Casa: %d", this.nome, this.idade, this.genero, this.gostaViajar, this.gostaCozinhar, this.gostaCinema, this.gostaBalada, this.gostaFicarEmCasa);
+    // }
+
     @Override
     public String toString(){
-        return super.toString() + ":\n" + String.format("Nome: %s\nIdade: %d\nGenero: %c\nGosta de Viajar: %d\nGosta de Cozinhar: %d\nGosta de Cinema: %d\nGosta de Balada: %d\nGosta  de Ficar em Casa: %d", this.nome, this.idade, this.genero, this.gostaViajar, this.gostaCozinhar, this.gostaCinema, this.gostaBalada, this.gostaFicarEmCasa);
+        return String.format("Nome: %s\nIdade: %d\nGenero: %c\nGosta de Viajar: %d\nGosta de Cozinhar: %d\nGosta de Cinema: %d\nGosta de Balada: %d\nGosta  de Ficar em Casa: %d", this.nome, this.idade, this.genero, this.gostaViajar, this.gostaCozinhar, this.gostaCinema, this.gostaBalada, this.gostaFicarEmCasa);
     }
 
+    // public double calcularCompatibilidade(Pessoa pessoa){
+    //     return Math.sqrt(Math.pow(this.gostaViajar - pessoa.gostaViajar, 2) + Math.pow(this.gostaCozinhar - pessoa.gostaCozinhar, 2) + Math.pow(this.gostaCinema - pessoa.gostaCinema, 2) + Math.pow(this.gostaBalada - pessoa.gostaBalada, 2) + Math.pow(this.gostaFicarEmCasa - pessoa.gostaFicarEmCasa, 2));
+    // }
+
     public double calcularCompatibilidade(Pessoa pessoa){
-        return Math.sqrt(Math.pow(this.gostaViajar - pessoa.gostaViajar, 2) + Math.pow(this.gostaCozinhar - pessoa.gostaCozinhar, 2) + Math.pow(this.gostaCinema - pessoa.gostaCinema, 2) + Math.pow(this.gostaBalada - pessoa.gostaBalada, 2) + Math.pow(this.gostaFicarEmCasa - pessoa.gostaFicarEmCasa, 2));
+        return Math.sqrt(
+            Math.pow(pessoa.gostaViajar - this.gostaViajar, 2) + 
+            Math.pow(pessoa.gostaCozinhar - this.gostaCozinhar, 2) + 
+            Math.pow(pessoa.gostaCinema - this.gostaCinema, 2) + 
+            Math.pow(pessoa.gostaBalada - this.gostaBalada, 2) + 
+            Math.pow(pessoa.gostaFicarEmCasa - this.gostaFicarEmCasa, 2));
     }
 
 
