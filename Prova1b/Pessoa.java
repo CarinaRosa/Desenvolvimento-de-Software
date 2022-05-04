@@ -72,6 +72,10 @@ public class Pessoa {
         this.gostaViajar = gostaViajar;
     }
 
+    public void setGostaCozinhar(int gostaCozinhar){
+        this.gostaCozinhar = gostaCozinhar;
+    }
+
     public void setGostaCinema(int gostaCinema){
         this.gostaCinema = gostaCinema;
     }
