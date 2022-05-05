@@ -18,59 +18,68 @@ public class ProgramaPrincipal {
         //Nossa tentativa esta comentada, para validar o metodo do prof durante a aula
         // Pessoa pessoalida = null;
 
-        System.out.println("Digite o seu nome:");
-        pessoalida.setNome(teclado.next());
-
-        do {
-            System.out.println("Digite sua idade:");
-            pessoalida.setIdade(teclado.nextInt());
-        } while (pessoalida.getIdade() < 18);
-
-        do {
-            System.out.println("Digite seu genero:");
-            pessoalida.setGenero(teclado.next().charAt(0));
-        } while (pessoalida.getGenero() != 'M' && pessoalida.getGenero() != 'F');
-
-        do {
-            System.out.println("Entre 0 e 100, quanto você gosta de viajar?");
-            pessoalida.setGostaViajar(teclado.nextInt());
-        } while (pessoalida.getGostaViajar() < 0 || pessoalida.getGostaViajar() > 100);
-
-        do {
-            System.out.println("Entre 0 e 100, quanto você gosta de cozinhar?");
-            pessoalida.setGostaCozinhar(teclado.nextInt());
-        } while (pessoalida.getGostaCozinhar() < 0 || pessoalida.getGostaCozinhar() > 100);
-
-        do {
-            System.out.println("Entre 0 e 100, quanto você gosta de cinema?");
-            pessoalida.setGostaCinema(teclado.nextInt());
-        } while (pessoalida.getGostaCinema() < 0 || pessoalida.getGostaCinema() > 100);
-
-        do {
-            System.out.println("Entre 0 e 100, quanto você gosta de balada?");
-            pessoalida.setGostaBalada(teclado.nextInt());
-        } while (pessoalida.getGostaBalada() < 0 || pessoalida.getGostaBalada() > 100);
-
-        do {
-            System.out.println("Entre 0 e 100, quanto você gosta de ficar em casa?");
-            pessoalida.setGostaFicarEmCasa(teclado.nextInt());
-        } while (pessoalida.getGostaFicarEmCasa() < 0 || pessoalida.getGostaFicarEmCasa() > 100);
+        do {            
         
+            System.out.println("Digite o seu nome:");
+            pessoalida.setNome(teclado.next());
 
-        double ultimaMenorDistancia = Double.MAX_VALUE;
-        Pessoa pessoaMaisCompativel = null;
+            do {
+                System.out.println("Digite sua idade:");
+                pessoalida.setIdade(teclado.nextInt());
+            } while (pessoalida.getIdade() < 18);
 
-        for (int i = 0; i < vetor.length; i++) {
-            if (vetor[i].getGenero() != pessoalida.getGenero()) {
-                if (vetor[i].calcularCompatibilidade(pessoalida) < ultimaMenorDistancia) {
-                    ultimaMenorDistancia = vetor[i].calcularCompatibilidade(pessoalida);
-                    pessoaMaisCompativel = vetor[i];
+            do {
+                System.out.println("Digite seu genero:");
+                pessoalida.setGenero(teclado.next().charAt(0));
+            } while (pessoalida.getGenero() != 'M' && pessoalida.getGenero() != 'F');
+
+            do {
+                System.out.println("Entre 0 e 100, quanto você gosta de viajar?");
+                pessoalida.setGostaViajar(teclado.nextInt());
+            } while (pessoalida.getGostaViajar() < 0 || pessoalida.getGostaViajar() > 100);
+
+            do {
+                System.out.println("Entre 0 e 100, quanto você gosta de cozinhar?");
+                pessoalida.setGostaCozinhar(teclado.nextInt());
+            } while (pessoalida.getGostaCozinhar() < 0 || pessoalida.getGostaCozinhar() > 100);
+
+            do {
+                System.out.println("Entre 0 e 100, quanto você gosta de cinema?");
+                pessoalida.setGostaCinema(teclado.nextInt());
+            } while (pessoalida.getGostaCinema() < 0 || pessoalida.getGostaCinema() > 100);
+
+            do {
+                System.out.println("Entre 0 e 100, quanto você gosta de balada?");
+                pessoalida.setGostaBalada(teclado.nextInt());
+            } while (pessoalida.getGostaBalada() < 0 || pessoalida.getGostaBalada() > 100);
+
+            do {
+                System.out.println("Entre 0 e 100, quanto você gosta de ficar em casa?");
+                pessoalida.setGostaFicarEmCasa(teclado.nextInt());
+            } while (pessoalida.getGostaFicarEmCasa() < 0 || pessoalida.getGostaFicarEmCasa() > 100);
+            
+
+            double ultimaMenorDistancia = Double.MAX_VALUE;
+            Pessoa pessoaMaisCompativel = null;
+
+            for (int i = 0; i < vetor.length; i++) {
+                if (vetor[i].getGenero() != pessoalida.getGenero()) {
+                    if (vetor[i].calcularCompatibilidade(pessoalida) < ultimaMenorDistancia) {
+                        ultimaMenorDistancia = vetor[i].calcularCompatibilidade(pessoalida);
+                        pessoaMaisCompativel = vetor[i];
+                    }
                 }
             }
-        }
 
-        System.out.printf("A pessoa mais compativel com %s é %s\n", pessoalida.getNome(), pessoaMaisCompativel.getNome());
-        System.out.printf("Dados da pessoa informada: \n %s \n Dados da pessoa mais compativel: \n %s", pessoalida);
+            System.out.printf("A pessoa mais compativel com %s é %s\n", pessoalida.getNome(), pessoaMaisCompativel.getNome());
+            System.out.printf("Dados da pessoa informada: \n %s \n Dados da pessoa mais compativel: \n %s", pessoalida, pessoaMaisCompativel);
+
+            do {
+                System.out.println("Deseja continuar? (S/N)");
+                resposta = teclado.nextInt();
+            } while ();
+
+        } while (condition);
 
             // System.out.println("Digite o seu nome:");
             // String nome = teclado.next();
