@@ -13,4 +13,26 @@ public class Leitura extends Material {
         this.edicao = edicao;
         this.editora = editora;
     }
+
+    public String getEdicao() {
+        return edicao;
+    }
+    public String getEditora() {
+        return editora;
+    }
+
+
+    public void setEdicao(String edicao) {
+        this.edicao = edicao;
+    }
+    public void setEditora(String editora) {
+        this.editora = editora;
+    }
+    
+
+    @Override
+    public String toString(){
+        return super.toString() + 
+        String.format("Editora: %s\nEdição: %s\n", this.editora,  this.edicao);
+    }
 }

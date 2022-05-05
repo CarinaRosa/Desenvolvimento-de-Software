@@ -14,22 +14,23 @@ public class Material {
         this.titulo = titulo;
         this.codigo = codigo;
     }
+    
 
     public int getCodigo() {
         return codigo;
     }
-
     public String getTitulo() {
         return titulo;
     }
 
+
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
-
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
+
 
     @Override
     public String toString() {
