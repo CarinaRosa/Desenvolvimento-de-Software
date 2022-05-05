@@ -18,7 +18,7 @@ public class ProgramaPrincipal {
         //Nossa tentativa esta comentada, para validar o metodo do prof durante a aula
         // Pessoa pessoalida = null;
 
-        do {            
+        // do {            
         
             System.out.println("Digite o seu nome:");
             pessoalida.setNome(teclado.next());
@@ -74,12 +74,12 @@ public class ProgramaPrincipal {
             System.out.printf("A pessoa mais compativel com %s é %s\n", pessoalida.getNome(), pessoaMaisCompativel.getNome());
             System.out.printf("Dados da pessoa informada: \n %s \n Dados da pessoa mais compativel: \n %s", pessoalida, pessoaMaisCompativel);
 
-            do {
-                System.out.println("Deseja continuar? (S/N)");
-                resposta = teclado.nextInt();
-            } while ();
+        //     do {
+        //         System.out.println("Deseja continuar? (S/N)");
+        //         resposta = teclado.nextInt();
+        //     } while ();
 
-        } while (condition);
+        // } while (condition);
 
             // System.out.println("Digite o seu nome:");
             // String nome = teclado.next();
