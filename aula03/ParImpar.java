@@ -1,3 +1,5 @@
+package aula03;
+
 import java.util.Scanner;
 
 public class ParImpar{
@@ -18,7 +20,7 @@ public class ParImpar{
         do{
             n = teclado.nextInt();
             if (n >= 0) {
-                System.out.printIn(verificarParImpar(n));
+                System.out.printf(verificarParImpar(n));
             }
         }
         while(n >= 0);

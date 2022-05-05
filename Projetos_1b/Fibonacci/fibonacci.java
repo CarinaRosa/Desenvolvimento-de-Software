@@ -1,3 +1,5 @@
+package Projetos_1b.Fibonacci;
+
 import java.util.Scanner;
 
 public class fibonacci {  
