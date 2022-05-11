@@ -24,4 +24,10 @@ public class Circulo extends FormaGeometrica{
     public  double calcularArea(){
         return Math.PI * Math.pow(raio, 2);
     }
+
+    @Override
+    public String preencherCor() {
+        return "verde";
+    }
+    
 }

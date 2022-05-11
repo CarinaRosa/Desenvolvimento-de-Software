@@ -30,4 +30,8 @@ public class Triangulo extends FormaGeometrica {
     public double calcularArea(){
         return base * altura / 2;
     }
+    @Override
+    public String preencherCor() {
+        return "amarelo";
+    }
 }

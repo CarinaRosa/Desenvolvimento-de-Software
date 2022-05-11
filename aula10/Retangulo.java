@@ -31,4 +31,9 @@ public class Retangulo extends FormaGeometrica {
     public double calcularArea(){
         return base * altura;
     }
+
+    @Override
+    public String preencherCor() {
+        return "azul";
+    }
 }
