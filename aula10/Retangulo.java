@@ -29,6 +29,6 @@ public class Retangulo extends FormaGeometrica {
 
     @Override
     public double calcularArea(){
-        return (base*altura);
+        return base * altura;
     }
 }
