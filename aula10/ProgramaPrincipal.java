@@ -1,8 +1,8 @@
 package aula10;
 
-public class ProgramaPrincial {
+public class ProgramaPrincipal {
     public static void main(String[] args) {
-        FormaGeometrica forma = new FormaGeometrica();
+        FormaGeometrica forma = new FormaGeometrica();{
             
         }
     }
