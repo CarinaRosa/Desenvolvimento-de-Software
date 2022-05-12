@@ -1,4 +1,4 @@
-package aula10;
+package aula10.Logica;
 
 public class Circulo extends FormaGeometrica{
     private double raio;

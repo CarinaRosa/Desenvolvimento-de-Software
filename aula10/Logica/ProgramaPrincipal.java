@@ -1,4 +1,4 @@
-package aula10;
+package aula10.Logica;
 
 public class ProgramaPrincipal {
     public static void main(String[] args) {
