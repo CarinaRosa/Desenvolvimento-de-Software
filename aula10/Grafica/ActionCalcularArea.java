@@ -7,6 +7,7 @@ import javax.swing.JTextField;
 
 import aula10.Logica.Circulo;
 import aula10.Logica.Retangulo;
+import aula10.Logica.Triangulo;
 
 public class ActionCalcularArea extends AbstractAction{
     public enum OpcaoForma{
@@ -51,9 +52,9 @@ public class ActionCalcularArea extends AbstractAction{
                 break;
 
             case TRIANGULO:
-                double baseTriangulo = Double.parseDouble(txtBase.getText());
-                double alturaTriangulo = Double.parseDouble(txtAltura.getText());
-                Retangulo triangulo = new Retangulo(baseTriangulo, alturaTriangulo);                
+                double base = Double.parseDouble(txtBase.getText());
+                double altura = Double.parseDouble(txtAltura.getText());
+                Triangulo triangulo = new Triangulo(base, altura);                
                 double areaTriangulo = triangulo.calcularArea();
                 txtArea.setText(String.format("%f", areaTriangulo));
                 break;

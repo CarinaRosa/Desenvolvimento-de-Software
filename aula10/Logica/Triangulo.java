@@ -28,7 +28,7 @@ public class Triangulo extends FormaGeometrica {
 
     @Override
     public double calcularArea(){
-        return base * altura / 2;
+        return (base * altura / 2);
     }
     @Override
     public String preencherCor() {
