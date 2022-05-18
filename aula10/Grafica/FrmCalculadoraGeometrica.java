@@ -28,15 +28,15 @@ public class FrmCalculadoraGeometrica extends JFrame {
         pnl.setBorder(BorderFactory.createTitledBorder("Circulo"));
         add(pnl);
 
-        pnl.setLayout(new GridLayout(1, 5, 10, 50));
+        pnl.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 10));
 
         pnl.add(new JLabel("Raio:"));
-        txtCircunferenciaRaio = new JTextField();
+        txtCircunferenciaRaio = new JTextField(10);
         pnl.add(txtCircunferenciaRaio);
         btnCircunferenciaCalcularArea = new JButton("Calcular");
         pnl.add(btnCircunferenciaCalcularArea);
         pnl.add(new JLabel("Area:"));
-        txtCircunferenciaArea = new JTextField();
+        txtCircunferenciaArea = new JTextField(10);
         pnl.add(txtCircunferenciaArea);
 
                
@@ -44,36 +44,38 @@ public class FrmCalculadoraGeometrica extends JFrame {
         pnl.setBorder(BorderFactory.createTitledBorder("Retangulo"));
         add(pnl);
 
-        pnl.setLayout(new GridLayout(1, 7, 10, 50));
+        pnl.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 10));
 
         pnl.add(new JLabel("Base:"));
-        txtRetanguloBase = new JTextField();
+        txtRetanguloBase = new JTextField(10);
         pnl.add(txtRetanguloBase);
         pnl.add(new JLabel("Altura:"));
-        txtRetanguloAltura = new JTextField();
+        txtRetanguloAltura = new JTextField(10);
         pnl.add(txtRetanguloAltura);
         btnRetanguloCalcularArea = new JButton("Calcular");
         pnl.add(btnRetanguloCalcularArea);
         pnl.add(new JLabel("Area:"));
-        txtRetanguloArea = new JTextField();
+        txtRetanguloArea = new JTextField(10);
         pnl.add(txtRetanguloArea);
 
         pnl = new JPanel();
         pnl.setBorder(BorderFactory.createTitledBorder("Triangulo"));
         add(pnl);
 
-        pnl.setLayout(new GridLayout(1, 7, 10, 50));
+        pnl.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 10));
 
         pnl.add(new JLabel("Base:"));
-        txtTrianguloBase = new JTextField();
+        txtTrianguloBase = new JTextField(10);
         pnl.add(txtTrianguloBase);
         pnl.add(new JLabel("Altura:"));
-        txtTrianguloAltura = new JTextField();
+        txtTrianguloAltura = new JTextField(10);
         pnl.add(txtTrianguloAltura);
         btnTrianguloCalcularArea = new JButton("Calcular");
         pnl.add(btnTrianguloCalcularArea);
         pnl.add(new JLabel("Area:"));
-        txtTrianguloArea = new JTextField();
+        txtTrianguloArea = new JTextField(10);
         pnl.add(txtTrianguloArea);
+
+        pack();
     }
 }
