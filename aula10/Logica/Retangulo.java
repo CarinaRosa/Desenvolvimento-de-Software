@@ -4,7 +4,7 @@ public class Retangulo extends FormaGeometrica {
     private double base;
     private double altura;
 
-    public Retangulo(){
+    public Retangulo(double altura2){
 
     }
 

@@ -3,6 +3,8 @@ package aula10.Grafica;
 import java.awt.*;
 import javax.swing.*;
 
+import aula10.Grafica.ActionCalcularArea.OpcaoForma;
+
 public class FrmCalculadoraGeometrica extends JFrame {
 
     private JTextField txtCircunferenciaRaio;
@@ -77,5 +79,20 @@ public class FrmCalculadoraGeometrica extends JFrame {
         pnl.add(txtTrianguloArea);
 
         pack();
+
+
+        ActionCalcularArea action = new ActionCalcularArea(txtCircunferenciaRaio, OpcaoForma.CIRCULO, txtCircunferenciaArea);
+
+        btnCircunferenciaCalcularArea.addActionListener(action);
+
+
+        ActionCalcularArea action1 = new ActionCalcularArea(txtRetanguloBase, txtRetanguloAltura, OpcaoForma.RETANGULO, txtRetanguloArea);
+
+        btnRetanguloCalcularArea.addActionListener(action1);
+        
+
+        ActionCalcularArea action2 = new ActionCalcularArea(txtTrianguloBase, txtTrianguloAltura, OpcaoForma.TRIANGULO, txtTrianguloArea);
+
+        btnTrianguloCalcularArea.addActionListener(action2);
     }
 }
