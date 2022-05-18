@@ -19,14 +19,14 @@ Linguagem interpretada -
 
 Precisa de um interpretador (servidor) para ser executavel (Proc. + SO);
 
---------------//--------------
+***
 
 .java (codigo fonte) -> java.exe (programa executavel) -> .class (bytecode)
 
 *Bytecode é a compilação especial para codigo fonte de Java (compilador Java).
 *Java API ("dicionario" para comunicação de programas distintos), (facilitador para acessar de forma adequada outro programa).
 
---------------//--------------
+***
 
 https://devdocs.io/openjdk/
 
@@ -35,7 +35,7 @@ Java.util
 Organização de codigo em pacotes
 
 
------------------------------------------------//--------------------------------------------
+***
 
 // variáveis de instância - substitua o exemplo abaixo pelo seu próprio
 /*
@@ -46,7 +46,7 @@ Organização de codigo em pacotes
 // getters e setters
 
 
------------------------------------------------//--------------------------------------------
+***
 
 DICAS:
 
