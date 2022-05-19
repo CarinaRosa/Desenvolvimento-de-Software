@@ -24,9 +24,18 @@ public class ActionCalcular extends AbstractAction {
         double x = Double.parseDouble(txtX.getText());
         double y = Double.parseDouble(txtY.getText());
         Calculadora calc = new Calculadora(x, y);
-        
+
         if (cbxOperacao.getSelectedItem().equals("Soma")) {
             JOptionPane.showMessageDialog(null, String.format("O resultado de %f + %f é %f", x, y, calc.somar()), "Calculadora Simpes", JOptionPane.INFORMATION_MESSAGE);
+        }
+        if (cbxOperacao.getSelectedItem().equals("Subtração")) {
+            JOptionPane.showMessageDialog(null, String.format("O resultado de %f - %f é %f", x, y, calc.subtrair()), "Calculadora Simpes", JOptionPane.INFORMATION_MESSAGE);
+        }
+        if (cbxOperacao.getSelectedItem().equals("Multiplicação")) {
+            JOptionPane.showMessageDialog(null, String.format("O resultado de %f * %f é %f", x, y, calc.multiplicar()), "Calculadora Simpes", JOptionPane.INFORMATION_MESSAGE);
+        }
+        if (cbxOperacao.getSelectedItem().equals("Divisão")) {
+            JOptionPane.showMessageDialog(null, String.format("O resultado de %f / %f é %f", x, y, calc.dividir()), "Calculadora Simpes", JOptionPane.INFORMATION_MESSAGE);
         }
     }
     
