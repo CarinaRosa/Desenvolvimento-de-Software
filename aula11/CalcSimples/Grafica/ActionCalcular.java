@@ -4,7 +4,10 @@ import java.awt.event.ActionEvent;
 
 import javax.swing.AbstractAction;
 import javax.swing.JComboBox;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+
+import aula11.CalcSimples.Logica.Calculadora;
 
 public class ActionCalcular extends AbstractAction {
     private JTextField txtX, txtY;
@@ -18,8 +21,13 @@ public class ActionCalcular extends AbstractAction {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
+        double x = Double.parseDouble(txtX.getText());
+        double y = Double.parseDouble(txtY.getText());
+        Calculadora calc = new Calculadora(x, y);
         
+        if (cbxOperacao.getSelectedItem().equals("Soma")) {
+            JOptionPane.showMessageDialog(null, String.format("O resultado de %f + %f é %f", x, y, calc.somar()), "Calculadora Simpes", JOptionPane.INFORMATION_MESSAGE);
+        }
     }
     
 }
