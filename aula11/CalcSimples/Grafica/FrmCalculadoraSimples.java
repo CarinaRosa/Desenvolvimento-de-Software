@@ -17,13 +17,17 @@ public class FrmCalculadoraSimples extends JFrame{
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(new Dimension(400, 200));
+
         add(new JLabel("X:"));
         add(txtX = new JTextField(10));
+
         add(new JLabel("Y:"));
         add(txtY = new JTextField(10));
+
         String operacao[] = {"Soma", "Subtração", "Multiplicação", "Divisão"};
         add(new JLabel("Operação:"));
         add(cbxOperacao = new JComboBox<String>(operacao));
+        
         add(btnCalcular = new JButton("Calcular:"));
     }
 }
