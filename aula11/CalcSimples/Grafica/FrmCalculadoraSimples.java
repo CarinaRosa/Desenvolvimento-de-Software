@@ -16,7 +16,7 @@ public class FrmCalculadoraSimples extends JFrame{
         setLayout(new FlowLayout(FlowLayout.LEFT, 10, 10));
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(new Dimension(400, 200));
+        setSize(new Dimension(320, 120));
 
         add(new JLabel("X:"));
         add(txtX = new JTextField(10));
@@ -27,7 +27,7 @@ public class FrmCalculadoraSimples extends JFrame{
         String operacao[] = {"Soma", "Subtração", "Multiplicação", "Divisão"};
         add(new JLabel("Operação:"));
         add(cbxOperacao = new JComboBox<String>(operacao));
-        
+
         add(btnCalcular = new JButton("Calcular:"));
     }
 }
