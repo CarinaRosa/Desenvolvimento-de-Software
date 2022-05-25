@@ -16,9 +16,9 @@ public class ConsoleUtils {
                 input.close();
                 return num;
             } catch (NumberFormatException ex) {
-                // System.out.println("Valor informado não é um numero inteiro valido. Tente novamente!");
-                System.out.println(ex.getMessage());
-                ex.printStackTrace();
+                System.out.println("Valor informado não é um numero inteiro valido. Tente novamente!");
+                // System.out.println(ex.getMessage());
+                // ex.printStackTrace();
             }
         }
         
