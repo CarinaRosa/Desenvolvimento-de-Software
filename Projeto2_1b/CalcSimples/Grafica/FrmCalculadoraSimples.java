@@ -1,4 +1,4 @@
-package aula11.CalcSimples.Grafica;
+package Projeto2_1b.CalcSimples.Grafica;
 
 import javax.swing.JButton;
 import javax.swing.JComboBox;
