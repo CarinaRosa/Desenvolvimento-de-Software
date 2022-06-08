@@ -14,5 +14,10 @@ public class ProgramaPrincipal {
         pessoas.add(new Pessoa("Francielli", 33, 65, 1.68));
         pessoas.add(new Pessoa("Diogo", 15, 54, 1.63));
         pessoas.add(new Pessoa("Natasha", 23, 53, 1.56));
+
+        //Foreach + print
+        for (Pessoa p : pessoas) {
+            System.out.println(p);
+        }
     }
 }
