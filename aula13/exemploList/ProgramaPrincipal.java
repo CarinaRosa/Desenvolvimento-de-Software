@@ -1,6 +1,7 @@
 package aula13.exemploList;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class ProgramaPrincipal {
@@ -19,5 +20,17 @@ public class ProgramaPrincipal {
         for (Pessoa p : pessoas) {
             System.out.println(p);
         }
+
+        //Ordenação 
+
+        System.out.println("\n---------------ORDENAÇÃO---------------\n");
+        Collections.sort(pessoas);
+
+        //Foreach + print
+
+        for (Pessoa p : pessoas) {
+            System.out.println(p);
+        }
+
     }
 }
