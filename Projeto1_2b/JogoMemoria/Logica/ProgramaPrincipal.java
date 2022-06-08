@@ -1,4 +1,4 @@
-package Projeto2_1b.JogoMemoria.Logica;
+package Projeto1_2b.JogoMemoria.Logica;
 
 // import Projeto2_1b.JogoMemoria.JogoDaMemoria;
 

@@ -1,8 +1,8 @@
-package Projeto2_1b.JogoMemoria.Grafica;
+package Projeto1_2b.JogoMemoria.Grafica;
 
 import java.util.Random;
 
-import javax.swing.GroupLayout;
+// import javax.swing.GroupLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;

@@ -1,4 +1,4 @@
-package Projeto2_1b.CalcSimples.Logica;
+package Projeto1_2b.CalcSimples.Logica;
 
 import aula11.CalcSimples.Grafica.FrmCalculadoraSimples;
 
