@@ -32,5 +32,13 @@ public class ProgramaPrincipal {
             System.out.println(p);
         }
 
+        //criar nova pessoa
+
+        Pessoa p = new Pessoa("Gustavo", 38, 80.5, 1.76);
+        p.getTelefones().put("Residencial", "41 3264-3273");
+        p.getTelefones().put("Comercial", "41 3763-4755");
+        p.getTelefones().put("Celular", "41 99861-5310");
+
+        System.out.printf("Telefone Celular: %s", p.getTelefones().get("Celular"));
     }
 }
