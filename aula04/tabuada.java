@@ -20,7 +20,7 @@ public class tabuada {
     %d = inteiro
     %f = float
     %s = string
-    %c - character
+    %c = character
     %t = data/hora
 
 */
